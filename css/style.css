@@ -35,3 +35,20 @@ img {
 .active {
     display: block;
 }
+
+#arrow-carousel {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25vh;
+}
+
+
+button {
+    font-size: 40px;
+    z-index: 1;
+}
+
+button:hover {
+    background-color: red;
+    cursor: pointer;
+}

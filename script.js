@@ -9,12 +9,26 @@ afterButton.addEventListener('click',
 function() {
 
     const activePick = document.querySelector('.pick.active');
-    const nextElement = activePick.nextElementSibling;
-    console.log(nextElement)
+    const afterElement = activePick.nextElementSibling;
+    console.log(afterElement)
 
-    if (nextElement) {
+    if (afterElement) {
         activePick.classList.remove('active');
-        nextElement.classList.add('active')
+        afterElement.classList.add('active')
     }
 }
-)
+);
+
+beforeButton.addEventListener('click',
+function() {
+
+    const activePick = document.querySelector('.pick.active');
+    const beforeElement = activePick.previousElementSibling;
+    console.log(beforeElement)
+
+    if (beforeElement) {
+        activePick.classList.remove('active');
+        beforeElement.classList.add('active')
+    }
+}
+);
